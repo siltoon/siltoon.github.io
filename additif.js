@@ -562,6 +562,7 @@ if (CST_init == 0) {
 
                         if (xyztValue !== null){
                             CST_TOFIND=xyztValue;
+                            createCookie('1234',xyztValue,7)
 
                         }
                         else{
