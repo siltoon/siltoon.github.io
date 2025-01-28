@@ -550,7 +550,7 @@ if (CST_init == 0) {
 						else
 							{
 							CST_TOFIND=x;
-                            CST_TOFIND=813;
+
 							//SCORE=y;
 							}
 							
