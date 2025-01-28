@@ -536,9 +536,35 @@ function showScore(){
 function main_loop()
 {
 
+
+    // Get the current URL of the page
+    const url = window.location.href;
+
+    // Parse the URL
+    const urlObj = new URL(url);
+    const params = new URLSearchParams(urlObj.search);
+
+    // Get the value of 'xyzt' parameter
+    const xyztValue = params.get('xyzt');
+
+    if (xyztValue !== null) {
+        // console.log("Value of xyzt:", xyztValue);
+      // You can do something with the value here
+        
+      CST_TOFIND=xyztValue;
+      
+    }
+
+
+
 //Initialisation
 if (CST_init == 0) {
 
+                        if (xyztValue !== null){
+                            CST_TOFIND=xyztValue;
+
+                        }
+                        else{
 						var x = readCookie('1234');
 						//var y = readCookie('1234score');
 						//if ((x==null)||(y==null))
@@ -550,10 +576,11 @@ if (CST_init == 0) {
 						else
 							{
 							CST_TOFIND=x;
-
+                            // CST_TOFIND=813;
 							//SCORE=y;
 							}
-							
+                        
+                        }
 
 						init();
 						init_operation();
