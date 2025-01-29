@@ -187,6 +187,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 			
 			showOperations();
 			createCookie('1234',CST_TOFIND,7); //creer un cookie avec la valeur courante pour le chiffre a trouver pour 7 jours			
@@ -223,6 +224,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
 			showOperations();
@@ -261,6 +263,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));			
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
 			showOperations();
@@ -299,6 +302,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
 			showOperations();
@@ -336,7 +340,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
-		
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 			
 			showOperations();
 			createCookie('1234',CST_TOFIND,7); //creer un cookie avec la valeur courante pour le chiffre a trouver pour 7 jours
@@ -351,6 +355,45 @@ var VALUE = 0;
 		return true;
 		}			
 		
+
+		if (valeur == 18) // fois 10
+		{
+		VALUE = OPE1*10
+		CALC[OPE1_pos]=new Brique(VALUE,CALC[OPE1_pos].degre++);
+		OPE1=0;
+		OPE1_pos=0;
+		SCORE+=1;
+		
+		if ((CALC[0].valeur == CST_TOFIND) && (CALC.length==1)) //Modified
+		{
+			CST_TOFIND ++;
+			init();
+			init_operation();
+			showTable();
+
+			showNumber();
+			
+			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
+			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
+			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
+		
+			
+			showOperations();
+			createCookie('1234',CST_TOFIND,7); //creer un cookie avec la valeur courante pour le chiffre a trouver pour 7 jours
+			
+		}
+		else  showTable();
+		
+		
+		//reshape();
+		showTable();
+		
+		return true;
+		}		
+
 
 		
 		
@@ -412,6 +455,7 @@ var VALUE = 0;
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));			
 			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));							
 			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 	
 			showOperations();
 			
@@ -489,7 +533,11 @@ var VALUE = 0;
 			
 		if (OPERATION[val].valeur ==17) //x5
 			towrite+="<td  width='"+Math.round(100/OPERATION.length) +"%' align='center' onclick=clickOperation("+OPERATION[val].valeur+");><label style='font-family: Montserrat, sans-serif; font-size:100px;color:green;'>"+OPERATION[val].text+"</label></td>";
+
+		if (OPERATION[val].valeur ==18) //10x
+			towrite+="<td  width='"+Math.round(100/OPERATION.length) +"%' align='center' onclick=clickOperation("+OPERATION[val].valeur+");><label style='font-family: Montserrat, sans-serif; font-size:100px;color:green;'>"+OPERATION[val].text+"</label></td>";
 			
+
 	} 
     towrite+="</tr></table>";
 	document.getElementById("operation").innerHTML=towrite;
@@ -592,6 +640,7 @@ if (CST_init == 0) {
 						if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));						
 						if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));												
                         if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));		
+						if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 
 						showOperations();
 						showNumber();
