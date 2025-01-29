@@ -185,8 +185,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 			
 			showOperations();
@@ -222,8 +222,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
@@ -261,8 +261,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));			
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
@@ -300,8 +300,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
@@ -338,8 +338,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 			
 			showOperations();
@@ -376,8 +376,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 		
 			
@@ -453,8 +453,8 @@ var VALUE = 0;
 			if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 			if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 			if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));			
-			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));							
-			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));
+			if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+			if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 			if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 	
 			showOperations();
@@ -638,8 +638,8 @@ if (CST_init == 0) {
 						if (CST_TOFIND>=7) OPERATION.push(new Operation(13,"|x|",0));
 						if (CST_TOFIND>=17) OPERATION.push(new Operation(14,"x²",0));
 						if (CST_TOFIND>=103) OPERATION.push(new Operation(15,"!",0));						
-						if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x3",0));												
-                        if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x5",0));		
+						if (CST_TOFIND>=182) OPERATION.push(new Operation(16,"x³",0));
+						if (CST_TOFIND>=813) OPERATION.push(new Operation(17,"x⁵",0));
 						if (CST_TOFIND>=850) OPERATION.push(new Operation(18,"10x",0));
 
 						showOperations();
